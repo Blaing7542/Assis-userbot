@@ -1,16 +1,17 @@
 import random
 import asyncio
 import time
+import tgcrypto
 from pyrogram import Client, filters
 
-api_id = 'apiid'
-api_hash = 'apihash'
+api_id = 'api_id'
+api_hash = 'api_hash'
 
 app = Client("my_userbot", api_id=api_id, api_hash=api_hash)
 
 @app.on_message(filters.command("help", prefixes="."))
 async def help_command(client, message):
-    await message.edit_text("**Команды:**\n`.bull` - буллинг\n`.info` - инфо о юб\n`.doubletext` - удваивает текст. пример: *ппррииввеетт!*\n`.ping` - показывает пинг юб\n`.new` - показывает изменения в юб")
+    await message.edit_text("**Команды:**\n`.bull` - буллинг\n`.info` - инфо о юб\n`.doubletext` - удваивает текст. пример: *ппррииввеетт!*\n`.ping` - показывает пинг юб")
 
 @app.on_message(filters.command("bull", prefixes="."))
 async def bull_command(client, message):
@@ -35,11 +36,11 @@ async def bull_command(client, message):
 
 @app.on_message(filters.command("info", prefixes="."))
 async def info_command(client, message):
-    await message.delete()
+    await message.delete()  # Удаляем сообщение пользователя
     await app.send_photo(
         chat_id=message.chat.id,
-        photo="путь к фото",
-        caption="**✨Assis by Blaing**\n__🔧Version: 1.1__\nNew:"
+        photo="D:/Projects Python/Discord Hikka/ubp.jpg",
+        caption="**✨Userbot by Blaing**\n__🔧Version: 1.1__\nNew: https://github.com/Blaing7542/Assis-userbot/releases/tag/new-version"
     )
 
 @app.on_message(filters.command("ping", prefixes="."))
@@ -58,5 +59,5 @@ async def animtext_command(client, message):
     for char in text:
         animated_text += char + char
     await message.edit_text(animated_text)
-    
+
 app.run()
