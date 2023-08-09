@@ -35,7 +35,7 @@ async def bull_command(client, message):
 
 @app.on_message(filters.command("info", prefixes="."))
 async def info_command(client, message):
-    await message.delete()  # Удаляем сообщение пользователя
+    await message.delete()
     await app.send_photo(
         chat_id=message.chat.id,
         photo="путь к фото",
