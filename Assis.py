@@ -39,7 +39,7 @@ async def info_command(client, message):
     await app.send_photo(
         chat_id=message.chat.id,
         photo="путь к фото",
-        caption="**✨Assis by Blaing**\n__🔧Version: 1.1__\nNew: command `.new`"
+        caption="**✨Assis by Blaing**\n__🔧Version: 1.1__\nNew:"
     )
 
 @app.on_message(filters.command("ping", prefixes="."))
@@ -58,9 +58,5 @@ async def animtext_command(client, message):
     for char in text:
         animated_text += char + char
     await message.edit_text(animated_text)
-
-@app.on_message(filters.command("new", prefixes="."))
-async def new_command(client, message):
-    await message.edit_text("Что нового в версии 1.1:\nКуча прикольных слов в .bull\nНовые команды: .doubletext, .new\nДоработана команда .ping\nИзменён дизайн")
-
+    
 app.run()
