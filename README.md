@@ -1,6 +1,6 @@
 # Assis-userbot
 Это юзербот для тг, который был создан с нуля.
-![изображение](https://github.com/Blaing7542/Assis-userbot/assets/127663348/504b2ac5-9182-4151-aed6-8f5a99fcac13)
+![snapedit_1691687183133](https://github.com/Blaing7542/Assis-userbot/assets/127663348/e4efea31-d07d-4d82-88c7-ba86fea5a36e)
 # Как его установить?
 
 Всё просто:
