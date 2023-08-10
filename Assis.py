@@ -59,7 +59,7 @@ async def info_command(_, message):
     await message.delete()
     await app.send_photo(
         chat_id=message.chat.id,
-        photo="https://user-images.githubusercontent.com/127663348/259346080-504b2ac5-9182-4151-aed6-8f5a99fcac13.png",
+        photo="https://user-images.githubusercontent.com/127663348/259819077-e4efea31-d07d-4d82-88c7-ba86fea5a36e.jpg",
         caption="**✨Assis by Blaing**\n__🔧Version: 1.2__\nSource: https://github.com/Blaing7542/Assis-userbot\n**Version for user❤**"
     )
 
