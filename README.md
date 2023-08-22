@@ -5,13 +5,11 @@
 
 Всё просто:
 1. Установите сначала код
-![изображение](https://github.com/Blaing7542/Assis-userbot/assets/127663348/383601e7-030f-4b11-84e3-5cfcc54c4608)
 
 2.Установите модули из файла requirements.txt. это:
-asyncio
-pyrogram
-tgcrypto
-pytube
+`pyrogram`
+`tgcrypto`
+`pytube`
 
 3. Откройте Assis.py и сайт https://my.telegram.org/apps
   
@@ -19,11 +17,9 @@ pytube
   
 5. Скопируйте их, и добавьте в Assis.py. Там подписано, где api_id, где api_hash.
 
-6. Найдите 109, 116, 123, 137, строку
+6. Измените userid_telegram на ваш ID.
 
-7. Вставьте туда ваш ID
+7. Запустите код
 
-8. Запустите код
-
-9. Готово!
+8. Готово!
     
